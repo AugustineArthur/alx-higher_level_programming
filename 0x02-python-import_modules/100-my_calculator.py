@@ -4,7 +4,7 @@ if __name__ == "__main__":
     count = len(argv) - 1
 
     if count != 3:
-        print("Usage: {} <a> <operator> <b>".format(argv[0]))
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
     num1 = int(argv[1])
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     elif op == "*":
         print(f"{num1} * {num2} = {mul(num1, num2}")
     elif op == "/":
-        print(f"{num1}  {num2} = {div(num1, num2}")
+        print(f"{num1} / {num2} = {div(num1, num2}")
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
